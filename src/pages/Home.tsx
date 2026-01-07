@@ -7,7 +7,11 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { motion } from 'framer-motion';
-import profilePic from '../assets/Images/pfpclear.png';
+import profilePic from '../assets/Images/pfp.png';
+import globeImg from '../assets/Images/globe.png';
+import qualifindImg from '../assets/Images/qualifind.png';
+import socialImg from '../assets/Images/social.png';
+
 
 
 const Home: React.FC = () => {
@@ -48,7 +52,7 @@ const sliderSettings = {
 const featuredProjects = [
   {
     title: "AR Globe Mobile App",
-    image: "/images/globe.png",
+    image: globeImg,
     description:
       "An augmented reality mobile application that visualizes geographical and statistical data on an interactive 3D globe using real-time data layers.",
     tags: ["Current", "Mobile", "AR", "AI"],
@@ -56,7 +60,7 @@ const featuredProjects = [
   },
   {
     title: "Find-a-Party",
-    image: "/images/social.png",
+    image: socialImg,
     description:
       "A mobile platform for discovering and organizing social events with real-time updates, location-based discovery, and intuitive browsing.",
     tags: ["2024", "Mobile", "Android"],
@@ -64,7 +68,7 @@ const featuredProjects = [
   },
   {
     title: "AI Document Chatbot",
-    image: "/images/qualifind.png",
+    image: qualifindImg,
     description:
       "A document-aware AI chatbot that enables users to query large files and receive accurate, context-aware responses.",
     tags: ["2025", "AI", "Full-Stack"],
@@ -95,7 +99,7 @@ const skills = [
   
           <div className="absolute inset-0 bg-white/30"></div>
           
-          <div className="relative z-10 w-full px-6">
+          <div className="relative z-10 max-w-6xl mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="md:w-1/2">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#E8B4BC]/10 text-[#D9A5B3] text-sm font-medium mb-6">
@@ -278,49 +282,49 @@ const skills = [
       </section>
 
 
-{/* Skills Section */}
-<section className="py-20 w-full bg-white">
-  <div className="px-6">
-    <div className="max-w-5xl mx-auto text-center">
+      {/* Skills Section */}
+      <section className="py-20 w-full bg-white">
+        <div className="px-6">
+          <div className="max-w-6xl mx-auto text-center">
 
-      <h2 className="text-3xl font-bold mb-3">Technical Skills</h2>
-      <p className="text-gray-600 mb-10">
-        Technologies and tools I regularly work with across web, mobile, and full-stack projects.
-      </p>
+            <h2 className="text-3xl font-bold mb-3">Technical Skills</h2>
+            <p className="text-gray-600 mb-10">
+              Technologies and tools I regularly work with across web, mobile, and full-stack projects.
+            </p>
 
-      {/* Core stack */}
-      <div className="flex flex-wrap justify-center gap-4 mb-10">
-        {["React", "TypeScript", "Java", "Python", "C#", "Node.js", "Firebase", "SQL"].map(skill => (
-          <span
-            key={skill}
-            className="px-5 py-2 rounded-full bg-[#E8B4BC]/20 text-gray-900 font-semibold text-sm tracking-wide"
-          >
-            {skill}
-          </span>
-        ))}
-      </div>
+            {/* Core stack */}
+            <div className="flex flex-wrap justify-center gap-4 mb-10">
+              {["React", "TypeScript", "Java", "Python", "C#", "Node.js", "Firebase", "SQL"].map(skill => (
+                <span
+                  key={skill}
+                  className="px-5 py-2 rounded-full bg-[#E8B4BC]/20 text-gray-900 font-semibold text-sm tracking-wide"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
 
-      <div className="w-24 h-[1px] bg-[#E6C7CD] mx-auto mb-10" />
+            <div className="w-24 h-[1px] bg-[#E6C7CD] mx-auto mb-10" />
 
-      {/* Supporting stack */}
-      <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
-        {[
-          "JavaScript", "Kotlin", "Swift", ".NET", "REST APIs", "Android Studio", "MongoDB",
-          "PostgreSQL", "MySQL", "Redis", "Docker", "Azure", "Git", "CI/CD",
-          "HTML", "CSS", "ROS", "Electron"
-        ].map(skill => (
-          <span
-            key={skill}
-            className="px-4 py-1.5 rounded-full border border-[#F1D2D7] text-gray-700 text-sm"
-          >
-            {skill}
-          </span>
-        ))}
-      </div>
+            {/* Supporting stack */}
+            <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
+              {[
+                "JavaScript", "Kotlin", "Swift", ".NET", "REST APIs", "Android Studio", "MongoDB",
+                "PostgreSQL", "MySQL", "Redis", "Docker", "Azure", "Git", "CI/CD",
+                "HTML", "CSS", "ROS", "Electron"
+              ].map(skill => (
+                <span
+                  key={skill}
+                  className="px-4 py-1.5 rounded-full border border-[#F1D2D7] text-gray-700 text-sm"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
 
-    </div>
-  </div>
-</section>
+          </div>
+        </div>
+      </section>
 
 
     </div>

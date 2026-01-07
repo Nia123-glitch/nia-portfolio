@@ -57,51 +57,58 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 </main>
 
       {/* Footer */}
-      <footer className="bg-gray-50 py-8 mt-16">
-        <div className="container">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-            <div className="text-center md:text-left">
-              <h3 className="text-lg font-semibold mb-2">Nia Legerton</h3>
-              <p className="text-gray-600 text-sm">Software Engineer</p>
+      <footer className="mt-16 border-t border-[#F1D2D7] bg-[#FFF7F8]">
+        <div className="max-w-6xl mx-auto px-6 py-10">
+          <div className="flex flex-col md:flex-row justify-between items-start gap-8">
+            <div>
+              <h3 className="text-lg font-semibold">Nia Legerton</h3>
+              <p className="text-gray-600 text-sm mt-1">Software Engineer</p>
               <p className="text-gray-500 text-sm mt-1">Full-Stack • Mobile • AI</p>
             </div>
-            
-            <div className="flex gap-6">
-              <a 
-                href="mailto:nialegerton@gmail.com" 
-                className="text-gray-600 hover:text-[#E8B4BC] transition-colors"
-                aria-label="Email"
-              >
-                <Mail size={20} />
-              </a>
-              <a 
-                href="https://github.com/Nia123-glitch" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-gray-600 hover:text-[#E8B4BC] transition-colors"
-                aria-label="GitHub"
-              >
-                <Github size={20} />
-              </a>
-              <a 
-                href="#" // Add your LinkedIn URL
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-gray-600 hover:text-[#E8B4BC] transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin size={20} />
-              </a>
+
+            <div className="flex flex-col gap-3">
+              <div className="flex gap-5">
+                <a
+                  href="mailto:nialegerton@gmail.com"
+                  className="text-gray-700 hover:text-[#E8B4BC] transition-colors"
+                  aria-label="Email"
+                >
+                  <Mail size={20} />
+                </a>
+                <a
+                  href="https://github.com/Nia123-glitch"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-700 hover:text-[#E8B4BC] transition-colors"
+                  aria-label="GitHub"
+                >
+                  <Github size={20} />
+                </a>
+                {/* Replace with your real LinkedIn URL */}
+                <a
+                  href="https://www.linkedin.com/in/nia-l-261528237/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-700 hover:text-[#E8B4BC] transition-colors"
+                  aria-label="LinkedIn"
+                >
+                  <Linkedin size={20} />
+                </a>
+              </div>
+              <p className="text-xs text-gray-500">
+                Based in Trinidad & Tobago • Open to remote/international roles
+              </p>
             </div>
           </div>
-          
-          <div className="mt-8 pt-6 border-t border-gray-200 text-center">
+
+          <div className="mt-8 pt-6 border-t border-[#F1D2D7] text-center">
             <p className="text-gray-500 text-sm">
               © {new Date().getFullYear()} Nia Legerton. All rights reserved.
             </p>
           </div>
         </div>
       </footer>
+
     </div>
   );
 };

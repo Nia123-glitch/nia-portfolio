@@ -1,4 +1,9 @@
 import { Project } from '../types';
+import introbg from '../assets/Images/introbg.png';
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 export const projects: Project[] = [
   {
@@ -19,6 +24,7 @@ export const projects: Project[] = [
     isFeatured: true,
     imageUrl: "/api/placeholder/400/300"
   },
+
   {
     id: 2,
     title: "Find-a-Party Social App",

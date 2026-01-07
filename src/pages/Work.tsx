@@ -11,56 +11,13 @@ const Work: React.FC = () => {
       <div className="container">
         {/* Hero Section */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold mb-4">Work & Experience</h1>
+          <h1 className="text-4xl font-bold mb-4">Portfolio</h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             A comprehensive overview of my professional journey and technical projects
           </p>
         </div>
 
-        {/* Experience Section */}
-        <section className="mb-20">
-          <h2 className="text-3xl font-bold mb-8">Professional Experience</h2>
-          <div className="space-y-8">
-            {experiences.map((exp) => (
-              <div 
-                key={exp.id} 
-                className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-lg transition-shadow"
-              >
-                <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
-                  <div>
-                    <h3 className="text-xl font-bold">{exp.position}</h3>
-                    <p className="text-lg text-gray-700">{exp.company}</p>
-                  </div>
-                  <div className="text-gray-600 mt-2 md:mt-0">
-                    <p>{exp.location} • {exp.period}</p>
-                  </div>
-                </div>
-                
-                <ul className="space-y-2 mb-6">
-                  {exp.achievements.map((achievement, index) => (
-                    <li key={index} className="flex items-start">
-                      <span className="text-[#E8B4BC] mr-2">•</span>
-                      <span className="text-gray-700">{achievement}</span>
-                    </li>
-                  ))}
-                </ul>
-                
-                <div className="flex flex-wrap gap-2">
-                  {exp.technologies.map((tech) => (
-                    <span 
-                      key={tech}
-                      className="px-3 py-1 rounded-full text-sm bg-[#E8B4BC]/10 text-[#D9A5B3]"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Projects Section */}
+                {/* Projects Section */}
         <section>
           <h2 className="text-3xl font-bold mb-8">All Projects</h2>
           <div className="space-y-6">
@@ -163,6 +120,50 @@ const Work: React.FC = () => {
             ))}
           </div>
         </section>
+
+        {/* Experience Section */}
+        <section className="mb-20">
+          <h2 className="text-3xl font-bold mb-8">Professional Experience</h2>
+          <div className="space-y-8">
+            {experiences.map((exp) => (
+              <div 
+                key={exp.id} 
+                className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-lg transition-shadow"
+              >
+                <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                  <div>
+                    <h3 className="text-xl font-bold">{exp.position}</h3>
+                    <p className="text-lg text-gray-700">{exp.company}</p>
+                  </div>
+                  <div className="text-gray-600 mt-2 md:mt-0">
+                    <p>{exp.location} • {exp.period}</p>
+                  </div>
+                </div>
+                
+                <ul className="space-y-2 mb-6">
+                  {exp.achievements.map((achievement, index) => (
+                    <li key={index} className="flex items-start">
+                      <span className="text-[#E8B4BC] mr-2">•</span>
+                      <span className="text-gray-700">{achievement}</span>
+                    </li>
+                  ))}
+                </ul>
+                
+                <div className="flex flex-wrap gap-2">
+                  {exp.technologies.map((tech) => (
+                    <span 
+                      key={tech}
+                      className="px-3 py-1 rounded-full text-sm bg-[#E8B4BC]/10 text-[#D9A5B3]"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
       </div>
     </div>
   );
