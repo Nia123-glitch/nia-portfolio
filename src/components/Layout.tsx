@@ -50,9 +50,11 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
       </header>
 
       {/* Main Content */}
-      <main className="flex-grow">
-        {children}
-      </main>
+<main className="flex-grow w-full">
+  <div className="w-full">
+    {children}
+  </div>
+</main>
 
       {/* Footer */}
       <footer className="bg-gray-50 py-8 mt-16">
