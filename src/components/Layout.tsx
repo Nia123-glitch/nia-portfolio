@@ -28,8 +28,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                 className="w-8 h-8 rounded object-cover"
               />
             </div>
-            {/* Optional: Keep name next to images or remove */}
-            {/* <span className="text-xl font-semibold">Nia Legerton</span> */}
+
           </Link>
           
           <nav className="flex gap-8">
@@ -84,7 +83,6 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                 >
                   <Github size={20} />
                 </a>
-                {/* Replace with your real LinkedIn URL */}
                 <a
                   href="https://www.linkedin.com/in/nia-l-261528237/"
                   target="_blank"

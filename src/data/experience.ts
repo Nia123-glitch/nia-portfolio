@@ -6,7 +6,7 @@ export const experiences: Experience[] = [
     company: "Yick Solutions",
     position: "Full Stack Developer Intern",
     location: "Suzhou, China",
-    period: "2023",
+    period: "Mar 2025- Jun 2025",
     achievements: [
       "Built a document-aware AI chatbot capable of retrieving and answering user queries based on uploaded files",
       "Implemented citation support and intelligent response generation",
@@ -20,7 +20,7 @@ export const experiences: Experience[] = [
     company: "Golden Future Resource Group",
     position: "Robotics Engineering Intern",
     location: "Suzhou, China",
-    period: "2023",
+    period: "Feb 2025 - Apr 2025",
     achievements: [
       "Contributed to the design and optimization of navigation maps for Automated Guided Vehicles",
       "Improved path planning algorithms for efficient warehouse navigation",
@@ -33,12 +33,27 @@ export const experiences: Experience[] = [
     company: "Iridis Solutions",
     position: "Web Developer",
     location: "Trinidad and Tobago",
-    period: "2022",
+    period: "2024-2025",
     achievements: [
       "Built responsive company websites using React, JavaScript, HTML, and CSS",
       "Developed a consultation booking system with RESTful API integration",
       "Implemented form validation and state management for improved user experience"
     ],
     technologies: ["React", "JavaScript", "HTML", "CSS", "REST APIs"]
+  },
+
+    {
+    id: 3,
+    company: "NovaTech Software Solutions",
+    position: "Co-Founder & Developer",
+    location: "Trinidad and Tobago/Remote",
+    period: "Present",
+    achievements: [
+      "Built and delivered client-facing web solutions.",
+      "Developing an AR globe application for a client (scoping, implementation, delivery).",
+      "Handling end-to-end delivery: planning, UI, implementation, and handoff.",
+      "Collaborating with a co-founder on product direction and client requirements."
+    ],
+    technologies: ["React", "JavaScript", "HTML", "Firebase", "REST APIs", "Unity", "C#", ".NET"]
   }
 ];

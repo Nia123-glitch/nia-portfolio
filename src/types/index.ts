@@ -5,12 +5,13 @@ export interface Project {
   tags: string[];
   description: string;
   role: string;
-  challenges: string[];
+  challenges?: string[];
   technologies: string[];
   githubUrl?: string;
   demoUrl?: string;
   isFeatured: boolean;
   imageUrl?: string;
+  images: string[];
 }
 
 export interface Experience {

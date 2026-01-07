@@ -25,7 +25,7 @@ const sliderSettings = {
   slidesToShow: 1,
   slidesToScroll: 1,
   centerMode: true,
-  centerPadding: '200px', // Increased from 100px for more side space
+  centerPadding: '200px',
   responsive: [
     {
       breakpoint: 1024,
@@ -43,7 +43,7 @@ const sliderSettings = {
       breakpoint: 480,
       settings: {
         centerPadding: '50px',
-        centerMode: false // Stack on mobile
+        centerMode: false
       }
     }
   ]
@@ -253,12 +253,11 @@ const skills = [
                         ))}
                       </div>
 
-                      {/* CTA */}
                       <a
                         href={project.link}
                         className="mt-auto text-sm font-medium text-[#C77A8A] hover:underline"
                       >
-                        View case study →
+                        View Details →
                       </a>
                     </div>
                   </div>
