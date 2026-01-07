@@ -8,10 +8,28 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
-      <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100">
-        <div className="container py-4 flex justify-between items-center">
-          <Link to="/" className="text-xl font-semibold">
-            Nia Legerton
+      <header className="sticky top-0 z-50 bg-white/30 backdrop-blur-sm border-b border-gray-100">
+        <div className="w-full max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+          <Link to="/" className="flex items-center gap-2">
+            <div className="flex gap-1">
+              <img 
+                src={require('../assets/Images/introone.png')}
+                alt="Logo 1"
+                className="w-8 h-8 rounded object-cover"
+              />
+              <img 
+                src={require('../assets/Images/introtwo.png')}
+                alt="Logo 2"
+                className="w-8 h-8 rounded object-cover"
+              />
+              <img 
+                src={require('../assets/Images/introthree.png')}
+                alt="Logo 3"
+                className="w-8 h-8 rounded object-cover"
+              />
+            </div>
+            {/* Optional: Keep name next to images or remove */}
+            {/* <span className="text-xl font-semibold">Nia Legerton</span> */}
           </Link>
           
           <nav className="flex gap-8">
@@ -25,7 +43,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
               to="/work" 
               className={`text-sm font-medium transition-colors ${location.pathname === '/work' ? 'text-[#E8B4BC]' : 'text-gray-600 hover:text-gray-900'}`}
             >
-              Work & Experience
+              Portfolio
             </Link>
           </nav>
         </div>

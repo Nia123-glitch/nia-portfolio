@@ -2,15 +2,25 @@ import React from 'react';
 import { ArrowRight, Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { projects } from '../data/projects';
+import introbg from '../assets/Images/introbg.png';
 
 const Home: React.FC = () => {
   const featuredProjects = projects.filter(project => project.isFeatured).slice(0, 3);
   
   return (
-    <div>
-      {/* Hero Section */}
-      <section className="py-16 md:py-24">
-        <div className="container">
+      <div>
+            {/* Hero Section */}
+            <section 
+        className="py-16 md:py-24 relative"
+        style={{
+          backgroundImage: `url(${introbg})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        <div className="absolute inset-0 "></div>
+        <div className="w-full max-w-6xl mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="md:w-1/2">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#E8B4BC]/10 text-[#D9A5B3] text-sm font-medium mb-6">
@@ -25,7 +35,7 @@ const Home: React.FC = () => {
               </p>
               <Link 
                 to="/work" 
-                className="inline-flex items-center gap-2 bg-[#E8B4BC] text-white px-6 py-3 rounded-full font-medium hover:bg-[#D9A5B3] transition-colors"
+                className="inline-flex items-center gap-2 bg-[#FFBAD5] text-white px-6 py-3 rounded-full font-medium hover:bg-[#D9A5B3] transition-colors"
               >
                 View My Work
                 <ArrowRight size={18} />
